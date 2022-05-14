@@ -15,6 +15,7 @@ const User = () => {
       try {
         const data = await sendRequest(
           process.env.REACT_APP_BACKEND_URL + "/users"
+          // "http://localhost:5000/api/users",
         );
         setLoadedUsers(data.users);
       } catch (err) {
