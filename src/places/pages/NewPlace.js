@@ -59,11 +59,11 @@ const NewPlace = () => {
     try {
       await sendRequest(
         process.env.REACT_APP_BACKEND_URL + "/places",
-        // "http://localhost:5000/api/places",
+      
         "POST",
         formData,
         {
-          // "Content-Type": "application/json",
+         
           Authorization: "Bearer " + auth.token,
         }
       );

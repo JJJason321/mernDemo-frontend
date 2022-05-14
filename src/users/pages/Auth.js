@@ -44,7 +44,7 @@ const Auth = () => {
       try {
         const responseData = await sendRequest(
           process.env.REACT_APP_BACKEND_URL+"/users/login",
-          // 'http://localhost:5000/api/users/login',
+     
           "POST",
           JSON.stringify({
             email: formState.inputs.email.value,
@@ -63,7 +63,7 @@ const Auth = () => {
         formData.append('image', formState.inputs.image.value);
         const responseData = await sendRequest(
           process.env.REACT_APP_BACKEND_URL+"/users/signup",
-          // 'http://localhost:5000/api/users/signup',
+        
           "POST",
           formData
         );
